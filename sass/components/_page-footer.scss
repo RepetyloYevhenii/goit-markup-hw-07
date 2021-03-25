@@ -1,0 +1,59 @@
+.page-footer {
+  background-color: $foot-primery-color;
+  color: $primary-white-color;
+  .container {
+    @extend %container;
+  }
+  .link {
+    @extend %link;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .list {
+    @extend %list;
+  }
+  b {
+    display: inline-block;
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    @include fontz(400, 14px, 1.14, 0.03em);
+  }
+  .container.info {
+    @include flex-mix(flex, baseline, space-between);
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
+  .address {
+    @include fontz(400, 14px, 1.71, 0.03em);
+  }
+}
+
+.logo-foot {
+  color: $primary-white-color;
+  &.link {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  @include fontz(700, 22px, 1.18, 0.03em);
+}
+
+.address {
+  &.company {
+    margin-bottom: 9px;
+    font-family: inherit;
+    font-style: normal;
+  }
+  .link {
+    font-family: inherit;
+    font-style: normal;
+    @include fontz(400, 14px, 1.71, 0.03em);
+    &.mail {
+      display: inline-block;
+      margin-bottom: 9px;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+      @include tranzition(color);
+    }
+  }
+}

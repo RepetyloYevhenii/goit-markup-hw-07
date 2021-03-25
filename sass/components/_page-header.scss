@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: $font-body;
+  color: $primery-text-color;
+}
+
+.page-header {
+  &.container {
+    @extend %container;
+  }
+  .list {
+    @extend %list;
+  }
+  .link {
+    @extend %link;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-white-color;
+}
+
+.main-nav {
+  @extend %flex;
+  .logo-head {
+    @extend %link;
+    font-family: $font-logo;
+    @include fontz(700, 26px, 1.19, 0.03em);
+    text-decoration: none;
+  }
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo-nav {
+  color: #000000;
+}
+
+//навигация сайта
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+  .item:nth-child(n + 1) {
+    margin-left: 50px;
+  }
+  .link.current {
+    color: $accent-text-color;
+    &::after {
+      opacity: 1;
+    }
+  }
+  .link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include fontz(500, 14px, 1, 0.02em);
+    color: $title-text-color;
+    @include tranzition(color);
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      display: block;
+      @include bsize(100%, 4px);
+      background-color: $accent-text-color;
+      border-radius: 4px;
+      opacity: 0;
+      @include tranzition(opacity);
+    }
+    &:hover {
+      color: $accent-text-color;
+      @include tranzition(color);
+    }
+    &:focus {
+      color: $accent-text-color;
+      @include tranzition(color);
+    }
+  }
+}
+
+.cont-nav {
+  margin-left: auto;
+  @extend %flex;
+  > .item.phone {
+    margin-left: 30px;
+  }
+  .link {
+    display: inline-flex;
+    align-items: center;
+    @include fontz(500, 14px, 1.14, 00.02em);
+    color: $primery-text-color;
+    @include tranzition(color);
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+      @include tranzition(color);
+    }
+  }
+  .mail-icon {
+    @include bsize(16px, 11px);
+    margin-right: 10px;
+    fill: currentColor;
+    cursor: pointer;
+  }
+  .phone-icon {
+    @include bsize(10px, 15px);
+    margin-right: 10px;
+    fill: currentColor;
+    cursor: pointer;
+  }
+}
