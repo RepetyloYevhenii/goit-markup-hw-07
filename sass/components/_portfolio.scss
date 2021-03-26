@@ -1,5 +1,6 @@
 .projects {
   border-top: 1px solid #ececec;
+
   .container {
     @extend %container;
   }
@@ -16,15 +17,18 @@
       opacity: 1;
       transform: translateY(0);
     }
+
     &:nth-child(3n) {
       margin-right: 0;
     }
+
     &:nth-last-child(-n + 3) {
       margin-bottom: 0;
     }
     .box {
       position: relative;
     }
+
     .link {
       @extend %link;
       color: $primery-text-color;
@@ -35,12 +39,14 @@
       }
     }
   }
+
   img {
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 5px 5px 0px 0px;
   }
+
   .title-primary {
     margin-top: 0;
     margin-bottom: 0;

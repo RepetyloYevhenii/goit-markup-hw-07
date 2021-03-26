@@ -287,7 +287,6 @@ summary {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: #757575;
 }
 
 .page-header {
@@ -472,6 +471,7 @@ body {
 }
 
 .logo-foot.link {
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -633,9 +633,8 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #757575;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/hero/hero-img.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/hero-img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/hero-img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -670,7 +669,7 @@ body {
 }
 
 .section.advantage {
-  border: 1px solid #ececec;
+  padding-bottom: 0px;
 }
 
 .visually-hidden {
@@ -748,7 +747,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .advantage p {
@@ -828,7 +827,7 @@ body {
 }
 
 .team .item.cards {
-  background-color: var(--primary-white-color);
+  background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -853,7 +852,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--primery-text-color);
+  color: #757575;
 }
 
 .team .list.icon {
@@ -1224,7 +1223,7 @@ body {
 .projects .projects-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc( (100% - 60px) / 3);
+  width: calc( (100% - 60px) / 3);
   border: 1px solid #eeeeee;
   border-radius: 5px;
 }

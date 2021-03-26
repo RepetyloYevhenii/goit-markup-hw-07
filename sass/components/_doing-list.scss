@@ -2,13 +2,16 @@
   .container {
     @extend %container;
   }
+
   .list {
     @extend %list;
     display: flex;
   }
+
   .link {
     @extend %link;
   }
+
   .item {
     position: relative;
     margin-right: 30px;
@@ -19,9 +22,11 @@
       margin-bottom: 0;
     }
   }
+
   img {
     display: block;
   }
+
   .doing-text {
     position: absolute;
     @include bsize(100%, 70px);
